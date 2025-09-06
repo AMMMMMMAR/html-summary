@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="icon" href="./assets/images/favicon-32x32.png">
+</head>
+
+<body>
+    <a href="./index.html">HomePage</a>
+    <!-- i will start to use div for now because of the css -->
+    <div id=" ">
+        <h1>Form elements</h1>
+        <p>This is the summary of the form part</p>
+        <p>The <b>form tag </b> in HTML is utilized for building interactive forms on a web page that enable users to
+            input and transmit data to a server for processing. The
+        <form> element can contain different types of form elements, such as input fields, radio buttons, checkboxes,
+            and submit buttons.</p>
+    </div>
+    <hr>
+    <div id="">
+        <h2>Register form</h2>
+
+        <form>
+            <label for="full-name">Full name </label>
+            <input type="text" id="full-name" placeholder="Ex: Ammar Moharram" autofocus><br>
+            <div>
+                <label>url link
+                    <input type="url" placeholder="url link">
+                </label>
+            </div>
+            <div>
+                <label>search
+                    <input type="search" placeholder="search">
+            </div>
+            <div>
+                <label>username
+                    <input type="text" placeholder="ex:example" required minlength="3" maxlength="10">
+            </div>
+            <div>
+                <label>email
+                    <input type="email" placeholder="Ex: ammar@gmail.com">
+            </div>
+            <div>
+                <label>Age
+                    <input type="number" placeholder="Ex:18-30" required min="18" max="30">
+                    </iv>
+                    <div>
+                        <label>Phone
+                            <input type="tel" placeholder="Ex:+9055555555">
+                    </div>
+                    <div>
+                        <label>CV file
+                            <input type="file">
+                    </div>
+                    <div>
+                        <input type="button" value="Send">
+                        <input type="reset" value="Clear">
+                    </div>
+                    <div>
+                        <button type="submit"> BTN</button>
+                        <button type="submit"> Send Data</button>
+                        <button type="reset">Clear </button>
+                        <!-- it is a close tag , you can write anything you want better than the input tag -->
+
+                    </div>
+
+                    <div>
+                        <!-- it is a single tag, there are many type of the type attributes. also there is a lot of attributes that i can use -->
+                        <p>There is a link between the label and the input when you click the label. <br>
+                            It is by for in the label and id in the input, you see the code for more info <br>
+                            there is also another way to make this link , it is to put the input inside the lable <br>
+                            you can also use the div to make a new line you can see it in the url input
+                        </p>
+                        <p>
+                            what is the benfite between all the these input while all of them can exapet text, number
+                            and
+                            symbols
+                            your keybored will change when you clike in to every filed in phone
+                        </p>
+                        <ul>
+                            <p>There is many attribute that you can add to the img</p>
+                            <li> placeholder --> It helps users understand the expected format, content, or purpose of
+                                the input
+                                field, thereby reducing confusion and potential errors. </li>
+                            <li>autofocus=> It focus to the input field when you open the website (it is in the name up
+                                )</li>
+                            <li>for testing : novalidate target=_blank </li>
+                        </ul>
+                        <ul>
+                            <p>there are many input filed</p>
+                            <li>text</li>
+                            <li>url</li>
+                            <li>search</li>
+                            <li>email</li>
+                            <li>number</li>
+                            <li>tel</li>
+                            <li>file</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>what are things that i can do to make the user fill the field in a correct way</p>
+                        <ul>
+                            <li>chosse the correct type</li>
+                            <li>to write the word required</li>
+                            <li>in the type number we can use min or max </li>
+                            <li>in the type text we can use minlength</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>How can i send the info to the server or the backend</p>
+
+                        <ol>
+                            <li>Frist i have to write <b>action attribute</b> in the form tag to send all the fields
+                                info. action attribute is the the path to the server or the backend</li>
+                            <li>Second we have to write the <b>method attribute</b> in the form tag , There are two
+                                different methods 1- GET 2- POST</li>
+                            <li>GET-->we will see the info in the url , it is better to use get for the information that
+                                normal </li>
+                            <li>POST-->we will not see the info in the url, you must use post for sensitive information
+                                like Registeration info </li>
+                            <!-- it is enough to know till here about these two methods, see you in the futuer  -->
+                            <li>Thired we have to write <b>name attribute</b> in the input tag, this one makes you see
+                                the the info in the server or the backend </li>
+                        </ol>
+                        <p>you can see the way of sending the info in this example <a href="../ContectForm/c-form.html"
+                                target="_blank">click here</a> </p>
+                    </div>
+                    <p>These are some other input fields</p>
+                    <div>
+                        <label>password
+                            <input type="password" placeholder="********">
+                        </label>
+                    </div>
+                    <div>
+                        <label>Birthday
+                            <input type="date">
+                        </label>
+                    </div>
+                    <div>
+                        <label>Time
+                            <input type="time">
+                        </label>
+                    </div>
+                    <div>
+                        <label>Week
+                            <input type="week">
+                        </label>
+                    </div>
+                    <div>
+                        <label>range
+                            <input type="range" min="0" max="20" step="2">
+                        </label>
+                    </div>
+                    <div>
+                        <label>Color
+                            <input type="color">
+                        </label>
+                    </div>
+                    <hr>
+                    <h2>Textarea </h2>
+                    <p>There is some attributes in the textarea </p>
+                    <ul>
+                        <li> The row is 2 by defult</li>
+                        <li>I can change the direaction of the textarea by dir tag and rtl attribute</li>
+
+                    </ul>
+                    <div>
+                        <label>Bio-En
+                            <textarea name="bio_en" rows="4" cols="20" placeholder="Bio" required minlength="10"
+                                maxlength="200"></textarea>
+                        </label>
+                    </div>
+                    <div>
+                        <label>Bio-Ar
+                            <textarea name="bio_ar" rows="4" cols="20" placeholder="Bio" required minlength="10"
+                                maxlength="200" dir="rtl"></textarea>
+                        </label>
+                    </div>
+                    <hr>
+                    <div>
+                        <h2>Checkbox & Radio Inputs</h2>
+                        <p>Select your skills:</p>
+                        <p>the checked attribute is to make the box checked by defult, the value attribute is for the
+                            inspect part </p>
+                        <label>
+                            <input name="skills" type="checkbox" value="html" checked>Html
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input name="skills" type="checkbox" value="css">Css
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input name="skills" type="checkbox" value="js">Js
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input name="skills" type="checkbox" value="react">React
+                        </label>
+                    </div>
+                    <div>
+                        <h2>Gender</h2>
+                        <p>for the radio part we have to write the same name attribute for both of the input to make it
+                            choose just one of them. the value attribute is for the inspect part </p>
+                        <label>
+                            <input name="gender" type="radio" value="male">Male
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input name="gender" type="radio" value="female">Female
+                        </label>
+                    </div>
+                    <div>
+                        <h2>Select element</h2>
+                        <P>In the first option there are two attributes that make the first select disabled selected by
+                            defult</P>
+                        <p>There are some attributes in the select part <b>name</b> to see the choosing things in the
+                            inspect, <b>multiple</b> to makes you choose more than one option, <b>size</b> to makes you
+                            see the size of the select box. </p>
+                        <p>the benfite of the optgroup tag is to divied the option to the group , you can write the
+                            group name as an attribute in the optgroup tag</p>
+                        <select name="flavor_name" multiple size="5">
+                            <option disabled selected>Select you ice cream flavor</option>
+                            <optgroup label="citrus">
+                                <option value="strawberry">Strawberry</option>
+                                <option value="blueberry">Blueberry</option>
+                            </optgroup>
+                            <optgroup label="sugars">
+                                <option value="mango" disabled>Mango-unavailable</option>
+                                <option value="chocolate">Chocolate</option>
+                                <option value="vanilla">Vanilla</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <hr>
+                    <div>
+                        <label>programing languges
+                            <select name="" id="">
+                                <option value="html">html</option>
+                                <option value="css">css</option>
+                                <option value="js">js</option>
+                                <option value="php">php</option>
+                            </select>
+                        </label>
+                    </div>
+                    <hr>
+                    <div>
+                        <p>form zero</p>
+                        <p>it is same as the list up , but in this one you can choose and search
+                            <!--when you write the one letter you will see the all the tings that is start with that letter-->
+                        </p>
+                        <label>programing languges
+                            <input list="programing">
+                            <datalist id="programing">
+                                <!-- the option tag without the close tag -->
+                                <option value="html">
+                                <option value="js">
+                                <option value="css">
+                                <option value="php">
+
+                            </datalist>
+                        </label>
+
+                    </div>
+        </form>
+
+    </div>
+
+</body>
+
+</html>

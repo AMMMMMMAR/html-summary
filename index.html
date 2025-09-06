@@ -1,0 +1,269 @@
+<!-- this is mean html5 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- this is for the languges -->
+  <meta charset="UTF-8" />
+
+  <!-- this meta is for making the website to be suite to every dvice -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML</title>
+  <link rel="icon" href="./assets/images/favicon-32x32.png" />
+</head>
+
+<body>
+  <h1 align="center">HTML summary</h1>
+  <h3 align="center">
+    This project is a personal summary of everything I’ve learned about HTML — built entirely with HTML itself. <br>
+    Instead of keeping notes on paper, I created this site as a living handbook. It’s designed to be a quick reference for me <br> 
+    (and anyone learning HTML) with clear examples, organized topics, and useful resources.
+  </h3>
+  <hr width="300" align="center" />
+  <p>
+    The align attribute was used to specify the alignment of content within
+    certain elements <br />
+    left, center, right,Using CSS provides more control and flexibility
+  </p>
+  <div>
+    <ul>
+      <p>This is called the navbar. which can help the user move to the part of the contact that he want in an easy way.
+      </p>
+      <p>How can you do it? you have to create an id in the point that you want to move then add a link in hte top of
+        the page by using a tag and writing the id name with a # in the beginning int the href attribute
+      </p>
+      <li><a href="#about">About</a></li>
+      <li><a href="#head-part">Head</a></li>
+      <li><a href="#body-part">Body</a></li>
+      <li><a href="#abbreviations">Abbreviations</a></li>
+      <li><a href="#links">Links</a></li>
+      <li><a href="#lists">Lists</a></li>
+      <li><a href="#images">Images</a></li>
+      <li><a href="#audio-video">Audio and Video</a></li>
+      <li><a href="#forms">Forms</a></li>
+      <li><a href="#semantic-html">Semantic HTML</a></li>
+      <li><a href="#tables">Tables</a></li>
+      <li><a href="#summary">Summary</a></li>
+      <li><a href="#resources">Resources</a></li>
+    </ul>
+  </div>
+
+
+
+  <h2 id="about">About</h2>
+  <p style="color: red">I am a Software Enginerring student</p>
+
+  <hr /> <!-- this is to make a line between the parts -->
+
+  <h2 id="head-part">HeadPart</h2>
+  <p>If you want to see the summary of the HeadPart</p>
+  <a href="head-part.html"> Cliek here</a>
+
+  <hr />
+
+  <h2 id="body-part">Body part</h2>
+  <h3>Style</h3>
+  <b>In the end of this style it is better to make it as a table</b>
+  <p>
+    There is different way of making the line bold 1-<strong>"logical tag"</strong>
+    for making the website understand that this is a important word and 2-
+    <b>"physical tag"</b>it is just for the font
+  </p>
+  <p>
+    There is different way of making the line italic 1-
+    <em>"logical tag " </em> for making the website understand that this is a
+    important word and 2- <i>"physical tag"</i>it is just for the line
+  </p>
+  <small>small</small> <big>big</big> <mark>mark</mark> <sup>sup</sup>
+  <sub>sub</sub> <del>del</del> <ins>ins</ins>
+  <p>we will see more style in CSS part</p>
+
+  <hr />
+
+  <h2 id="abbreviations">Abbreviations</h2>
+  <p>
+    I can program in <abbr title="HyperText Markup languge">HTML</abbr> and
+    another programing languges
+  </p>
+  <q>Programing is not about typing, it is about thinking. 'It is inline in
+    CSS'</q>
+
+  <blockquote>
+    Programing is not about typing, it is about thinking. 'it is block in CSS'
+  </blockquote>
+  <p>
+    Some important entities in HTML like <br />
+    &copy; 2024 copyright &#128513; <br />
+    <a href="https://www.w3schools.com/html/html_entities.asp" target="_blank">
+      Here there is some another entities and emojis</a>
+  </p>
+  <!-- There are different ways to show the code the browser 1- code tag and add some entities 2-pre tage and code tag  -->
+  <code>
+      &lt; h1 &gt;<br />
+      &nbsp; hello from html <br />
+      &lt; h1 &gt; <br />
+    </code>
+
+  When you use the <b>pre tag </b>it will show your code same as you write it with the spases
+  <pre>
+    <code>
+&lt; h1 &gt;
+  hello from html
+&lt; h1 &gt;
+    </code>
+    <b>it makes a lot of differences between the two codes</b>
+   </pre>
+
+  <hr />
+
+  <h2 id="links">Links</h2>
+  <!-- href = Hypertext Reference -->
+  <!-- I can use this tag to make any like for anything photo,phonenumber,mail,zip from my files and any links of angy website  -->
+  <!-- "target _blank" part when you click to it it will open in another web tap -->
+  <a href="/assets/file/file.pdf" target="_blank">Download File</a><br />
+  <!-- the purpose of  "mailto: and tel:" is when you cliek you will go directly to the app  -->
+  <a href="mailto:ammar@gmail.com" target="_blank">ammar@gmail.com</a><br />
+  <a href="tel:+90555222777" target="_blank">999222777</a>
+  <!-- there is another one i will write in it in top of the page -->
+  <p>
+    There is another type of links called navbar I mentioned it in the top of the page
+  </p>
+  <p>What is the differences between the absloute and relative path?</p>
+  <p>
+    Absolute path is the full path that you can reach to the file from any
+    place <br />
+    Relative path is the path that you can reach to the file from your current
+    location
+  </p>
+  <hr />
+  <h2 id="lists">Lists</h2>
+  <p>
+    We have 3 kind of list ordered , unordered and description( Not famous in use ) list also we have nested list
+    that is a list inside list
+  </p>
+  <p>This is the nested list</p>
+  <ul>
+    <li>
+      Frontend
+      <ul>
+        <li>Html</li>
+        <li>Css</li>
+        <li>JS</li>
+      </ul>
+    </li>
+    <li>
+      Backend
+      <ol>
+        <li>PHP</li>
+        <li>python</li>
+      </ol>
+    </li>
+  </ul>
+  <p>This is the unordered list</p>
+  <ul>
+    <li>Html</li>
+    <li>Css</li>
+    <li>JS</li>
+  </ul>
+  <p>This is the ordered list</p>
+  <ol>
+    <li>PHP</li>
+    <li>python</li>
+  </ol>
+  <p>This is the description list</p>
+  <dl>
+    <dt>HTML</dt>
+    <dd>languge of the web</dd>
+    <dd>The first lan</dd>
+    <dt>CSS</dt>
+    <dd>languge of the visuals</dd>
+  </dl>
+  <!-- 
+    dl=> Description List
+    dt=> Term
+    dd=> Description Term
+    -->
+  <p>
+    There is some attributes we have to write it in the <b>ol</b> part to see
+    the changes. We have the <br />
+    <b>reversed</b> that ...... <br />
+    <b>type="A,a,i"</b><br />
+    <b>start=""</b> to write the number that you want to start from
+  </p>
+
+  <hr>
+
+  <div> Form zero
+    <h3>Some different tags</h3>
+    <q>This is quote tag</q>
+    <blockquote>This is blockquote tag</blockquote>
+    <!-- <wbr> => there is more in css -->
+    <p> Hello and Hi means 2 <bdi> مرحبا </bdi> it is better to use it in En and Ar </p>
+    <h4>Accessibility</h4>
+    <p>This is a good vedio that will explain the accessibility</p>
+    <a href="https://youtu.be/lSqXHePabFo?si=u-rRrXfUapImkzml">click here1</a><br>
+    <a href="https://youtu.be/UnTxFfbpqco?si=uI-vUzjJDi_FhRXj">click here2</a>
+  </div>
+
+  <hr />
+
+  <h2 id="images">Images</h2>
+  <a href="/Images.html">Clike here to see the images</a>
+
+  <hr />
+
+  <h2 id="audio-video">Audio and Video</h2>
+  <a href="/Audio-Video.html">Clike here to see the audio and video
+  </a>
+
+  <hr />
+
+  <h2 id="form">Form</h2>
+  <a href="./form.html">click here to see the form summary</a>
+
+  <hr />
+
+  <h2 id="semantic-html">Semantic HTML</h2>
+  <a href="./blog.html">click here to see the Semantic html summary</a>
+
+  <hr>
+
+  <h2 id="table">Table form zero</h2>
+  <a href="./table.html">click here to see the table summary </a>
+
+  <hr>
+
+  <h2 id="summary">summary</h2>
+  <b>summary of the links that i should to remember</b>
+
+  <p>Chaking the code
+    <a href="https://validator.w3.org/" target="_blank">click here</a>
+  </p>
+
+  <p>zero summary
+    <a href="https://elzero.org/learn-html/" target="_blank">click here</a>
+  </p>
+
+  <p>There is something called canvas API related to html
+    <a href="https://youtube.com/playlist?list=PLDoPjvoNmBAxdetco1wwicE7Fbm73UYy0&si=cNaTDShykDzaenIU"
+      target="_blank">click here</a>
+  </p>
+
+  <p>Examples of websites items
+    <a href="https://elements.envato.com/" target="_blank">click here</a>
+  </p>
+  
+  <hr />
+
+  <h2 id="resources">Resources</h2>
+  <p>In this part i am going to write all the resources that i used to build this summary</p>
+  <ul>
+    <a href="https://www.udemy.com/share/1013gG3@tkEPwAGY0J19IIK7hMhs5lwn4f0XUTSex25XkbalW-6slXQiANFf_jXrDLPEFV0afw==/"
+      target="_blank">Uedmey</a> <br>
+    <a href="https://youtu.be/cSpndmwWmss?si=JIsCgGjsdJFVf96r" target="_blank">octocode </a> <br>
+    <a href="https://youtu.be/qfPUMV9J5yw?si=SwQOHnWyyuQUr5bU" target="_blank">elzero </a> <br>
+    <a href="https://www.w3schools.com/html/" target="_blank">w3school </a>
+  </ul>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Audio-Video</title>
+  <link rel="icon" href="/assets/images/favicon-32x32.png" />
+</head>
+
+<body>
+  <a href="/index.html">Home Page</a>
+  <h1>Video Tag</h1>
+  <p>
+    Hi, this is summary for all of the info about the video and audio in HTML
+  </p>
+  <p>For adding the video i will use video tag it is a closing tag</p>
+  <p>There is some attributes</p>
+  <ul>
+    <li>scr: The path of the video</li>
+    <li>width:</li>
+    <li>height:</li>
+    <li>
+      controls: To show the controls of the video without it will be as img
+    </li>
+    <li>autoplay: the video will start when you open the page directly</li>
+    <li>muted: the autoplay will not srart without the meted tag</li>
+    <li>loop: make the video still working</li>
+    <li>poster: adding a photo to be show before to start the video</li>
+  </ul>
+  <p>There is many kind of the video</p>
+  <ul>
+    <li>.mp4</li>
+    <li>.webm</li>
+    <!-- in the source tag in the type part will change to ogg -->
+    <li>.ovg</li>
+  </ul>
+  <p>In this one i used the poster and the loop</p>
+  <br />
+  <video src="/assets/media/videoplayback.mp4" width="450" height="300" controls loop poster="/assets/images/ai-generated.jpg"></video>
+  <br />
+  <p>In this one i used the autoplay and muted</p>
+  <video controls height="300" width="450" autoplay muted>
+    <source src="/assets/media/sea.mp4" type="video/mp4" />
+  </video><br />
+  <p>For more info about the source tag</p>
+  <a href="https://www.w3schools.com/tags/tag_source.asp" target="_blank">Clike here
+  </a>
+  <hr />
+  <h2>Audio Tag</h2>
+  <p>For adding the audio, i will use Audio tag, it is a closing tag</p>
+  <p>There is some attribute</p>
+  <ul>
+    <li>controls</li>
+    <li>loop</li>
+  </ul>
+  <p>kind of the audio</p>
+  <ol>
+    <li>.mp3</li>
+    <li>.wav</li>
+    <li>.ogg</li>
+  </ol>
+
+  <audio controls loop>
+    <source src="/assets/media/videoplayback.mp3" type="audio/mp3" />
+  </audio>
+  <p>for more info about the audio</p>
+  <a href="https://www.w3schools.com/html/html5_audio.asp" target="_blank">cliek here</a>
+  <p>for more info about the mimetype</p>
+  <a href="https://mimetype.io/all-types" target="_blank">click here</a>
+  <hr />
+  <h2>iframe</h2>
+  <p>It is just a frame created in the website and you can add anything to the frame like html webpage, pdf file, video
+    or video etc.</p>
+  <p>In this example i added the wikipedia page about html</p>
+  <iframe src="https://en.wikipedia.org/wiki/HTML" frameborder="0"> </iframe><br>
+  <p>map from google map</p>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12231.717806390474!2d32.77453670521578!3d39.965329990220674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d3496a6eabb915%3A0xcaa478468b8a680!2sDemetevler%2C%2006200%20Yenimahalle%2FAnkara!5e0!3m2!1sen!2str!4v1714839903370!5m2!1sen!2str"
+    width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <br>
+  <p>video from youtube</p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/bo9L-GKXSB0?si=NOEPQcjhh89SIy6Y"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <hr>
+  <p>The iframe tag has many attribute</p>
+  <ul>
+    <li>height</li>
+    <li>width</li>
+    <li>src: the path</li>
+    <li>frameborder:it is a frameborder around the thing</li>
+    <li>allowfullscreen</li>
+  </ul>
+  <p>The iframe tag can be used for many thing</p>
+  <ul>
+    <li>file as html,pdf,etc,...</li>
+    <li>website some of the website not allow as google</li>
+    <li>map: i have to copy the embed html</li>
+    <li>video from youtube</li>
+    <li>audio</li>
+  </ul>
+  <p>for more info about the iframe tag clike here</p>
+  <a href="https://www.w3schools.com/html/html_iframe.asp" target="_blank">Clike Here</a>
+</body>
+
+</html>
